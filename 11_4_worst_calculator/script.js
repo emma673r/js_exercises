@@ -73,6 +73,6 @@ function calculate() {
   result.textContent = resultValue;
   // Putting new li element in the DOM.
   resultsField.appendChild(result);
-  // Add scroll to the resultField (?)
+  // Add scroll to the resultField
   resultsField.scrollTop = resultsField.scrollHeight;
 }
