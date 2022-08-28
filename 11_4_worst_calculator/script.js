@@ -64,6 +64,7 @@ function calculate() {
     resultValue = resultValue.toFixed(roundingUp);
   }
 
+  //   make the firstNumberInput be the result value
   firstNumberInput.value = resultValue;
 
   // new html li element
