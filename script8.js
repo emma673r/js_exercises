@@ -1,3 +1,5 @@
+"use strict";
+
 // * https://javascript.info/function-basics
 
 // slide 4
@@ -86,3 +88,33 @@ presentPet(`Name`, `animal`, `animal Name`);
 presentPet(animalName, firstName, animalType);
 
 //* BASICALLY ALWAYS : will take the values of the given parameters when calling the function
+
+// slide 14
+
+// whatever parameters are given in the called fuction will be the one returned
+// names - dont matter
+// order - matter
+// number of param - matters
+// ? whatever
+
+// slide 15
+
+let globalVar = "Frank";
+
+// giveMeName("Winston");
+giveMeName();
+
+function giveMeName(firstname) {
+  // firstname = "Bruce";
+  globalVar = "Yoko";
+}
+
+console.log(globalVar);
+
+// overwrites -- like expected to, the inside one is used
+
+// no cause variables already declared
+
+// Yes
+
+// Yes
