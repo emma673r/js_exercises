@@ -47,25 +47,19 @@ function convertRGBstringToRGB(RGBstring) {
 convertRGBstringToRGB("rgb(133, 233, 333)");
 
 function convertRGBToHex(r, g, b) {
-  r = r.toString(16);
-  g = g.toString(16);
-  b = b.toString(16);
+  r = r.toString(16).toUpperCase();
+  g = g.toString(16).toUpperCase();
+  b = b.toString(16).toUpperCase();
 
-  if (r.length === 1) {
-    r = `0${r}`;
-    console.log(r);
-  }
-  if (g.length === 1) {
-    g = `0${g}`;
-  }
-  if (b.length === 1) {
-    b = `0${b}`;
-  }
+  r = r.padStart(2, "0");
+  g = g.padStart(2, "0");
+  b = b.padStart(2, "0");
 
   hex = `#${r}${g}${b}`;
-  //   console.log(r);
-  //   console.log(g);
-  //   console.log(b);
+
+//   console.log(r);
+//   console.log(g);
+//   console.log(b);
   console.log(hex);
 }
 
