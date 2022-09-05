@@ -40,52 +40,49 @@ function showModal(movie) {}
 // slide 10
 
 // let firstName = `Emma`;
-// let lastName = `Pasquer`;
-// let myName = "Emma Pasquer";
+// let myName = "Johnny";
 
-// sayHello(lastName, firstName);
+// sayHello("Johnny");
+// sayHello(myName);
+// sayHello(myName);
+// sayHello();
+// sayHello(firstName, "Pasquer");
+// sayHello("Pasquer", firstName);
 
-function sayHello (firstName) {
-console.log(`Hello ${firstName}`);
-}
+// function sayHello(firstName) {
+//   console.log(`Hello ${firstName}`);
+// }
+// console.log(`Hello ${firstName}`);
 
 // slide 11
 // slide 12
 
-// 1 -- runs it anyways - myName is undefined since nowhere did we give it value
-// 2 -- myName overwrites firstName
-// 3 -- runs function and displays nyName value
-// 4 -- displayshello undefined
-// 5 --  only displays firstName
-// 5 --  only displays lastName
+// 1 -- Hello ("firstName")
+// 2 -- hello myName
+// 3 -- logs the myName inside function and firstName outside
+// 4 -- displays hello undefined
+// 5 --  only the one parameter (as defined in the fucntion) so only display firstName
+// 5 --  only first paramter (as the one before)
 
 // slide 13
 
 function presentPet(firstName, animalType, animalName) {
-console.log(`My name is ${firstName}, I have a ${animalType} called ${animalName}.`);
+  console.log(`My name is ${firstName}, I have a ${animalType} called ${animalName}.`);
 }
 
 // slide 14
 
 // 1
 let firstName = `Emma`;
-let animalType;
-let animalName;
+let animalType = `cat`;
+let animalName = `Sika`;
 
+presentPet(`Name`, `animal`, `animal Name`);
 
-// presentPet(firstName, animalType, animalName);
+// will take the value of the given parameters when calling the function
 
 // 2
-let postCard = "hey";
 
-// presentPet(postCard, postCard, postCard);
+presentPet(animalName, firstName, animalType);
 
-// 3
-
-// presentPet(`Emma`,`cat`,`Sika`);
-
-// 4
-// presentPet(`Emma`, postCard, animalName);
-
-// 5
-// presentPet(postCard, firstName, animalType);
+//* BASICALLY ALWAYS : will take the values of teh goven parameters when calling the function
