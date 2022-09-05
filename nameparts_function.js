@@ -19,10 +19,12 @@ function getNameParts(fullname) {
   middleName = middleName.trim();
   lastName = lastName.trim();
 
+  let fullName = `${firstName} ${middleName} ${lastName}`;
+
   if (middleName == "") {
     middleName = null;
+    fullName = `${firstName} ${lastName}`;
   }
-  let fullName = `${firstName} ${middleName} ${lastName}`;
 
   console.log(firstName);
   console.log(middleName);
