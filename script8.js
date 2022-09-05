@@ -1,3 +1,5 @@
+// * https://javascript.info/function-basics
+
 // slide 4
 function myFunc(param1, param2) {
   // code goes here
