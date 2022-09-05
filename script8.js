@@ -85,4 +85,4 @@ presentPet(`Name`, `animal`, `animal Name`);
 
 presentPet(animalName, firstName, animalType);
 
-//* BASICALLY ALWAYS : will take the values of teh goven parameters when calling the function
+//* BASICALLY ALWAYS : will take the values of the given parameters when calling the function
