@@ -1,8 +1,3 @@
-let firstName;
-let middleName;
-let lastName;
-
-
 function getFullName(lastName, firstName, middleName) {
 
   let fullName = [firstName, middleName, lastName];
