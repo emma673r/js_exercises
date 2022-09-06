@@ -1,16 +1,18 @@
 function getFullName(lastName, firstName, middleName) {
+  // if (middleName) {
+  //   return `${firstName} ${middleName} ${lastName}`;
+  // }
+  // return `${firstName} ${lastName}`
 
-  let fullName = [firstName, middleName, lastName];
+  // or
 
-  if (middleName === undefined ) {
-    fullName = [firstName, lastName];
+  if (!middleName) {
+    return `${firstName} ${lastName}`;
   }
-
-  fullName = fullName.join(" ");
-
-  return fullName;
+  return `${firstName} ${middleName} ${lastName}`;
 }
 
 let result = getFullName("potter", "harry", "james", "ihfg");
-
 console.log(result);
+// or
+console.log(getFullName("potter", "harry", "james", "ihfg"));
