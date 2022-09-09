@@ -14,9 +14,11 @@ function convertHexToRGB(hex) {
   r = parseInt(r, 16);
   g = parseInt(g, 16);
   b = parseInt(b, 16);
+
+  return {r, g, b};
 }
 
-convertHexToRGB("#bada5");
+console.log(convertHexToRGB("#bada5"));
 
 function convertRGBToHex(r, g, b) {
   r = r.toString(16).toUpperCase();
